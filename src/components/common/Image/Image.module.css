@@ -1,0 +1,14 @@
+.image{
+    position: absolute;
+    top:0;
+     width: 100%;
+  height: 99.5vh;
+  z-index: -1;
+  overflow:hidden;
+
+}
+.image img{
+     width: 100%;
+  height: 200vh;
+  object-fit: cover; 
+}
