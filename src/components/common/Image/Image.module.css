@@ -1,6 +1,6 @@
 .image{
     position: absolute;
-    top:0;
+    top:43px;
      width: 100%;
   height: 99.5vh;
   z-index: -1;
@@ -11,4 +11,38 @@
      width: 100%;
   height: 200vh;
   object-fit: cover; 
+}
+.text{
+ 
+  color: white;
+  position: absolute;
+  right: 28rem;
+  top: 10rem;
+  z-index:10;
+  font-family: Louize, serif;
+  font-style:italic;
+  font-weight:400;
+  font-size:62px;
+  line-height: 42px;
+  cursor: pointer;
+
+}
+.text:hover{
+  color: #c58940;
+}
+.tExt{
+position: absolute;
+right:22rem;
+top:14rem;
+  color:white;
+  font-family: Louize, serif;
+  font-style:italic;
+  font-weight:400;
+  font-size:49px;
+  line-height: 42px;
+  cursor: pointer;
+
+}
+.tExt:hover{
+  color: #c58940;
 }

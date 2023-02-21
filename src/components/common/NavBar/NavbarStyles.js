@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: transparent;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +13,10 @@ export const Container = styled.div`
   /* Fix your navbar by using above two lines of code */
   z-index: 10;
 
- 
   .navbar {
-    width:100%;
+    width: 100%;
     border-radius: 2px;
-    background-color: transparent;
+    background-color: #c58940;
   }
   .navbar.colorChange {
     background-color: white;
@@ -26,14 +25,14 @@ export const Container = styled.div`
   .navContainer {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
     z-index: 1;
     width: 100%;
     padding: 0 34px;
     max-width: 1100px;
   }
   .navLogo {
-    color: black;
+    color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -42,6 +41,16 @@ export const Container = styled.div`
     margin-left: 4px;
     font-weight: bold;
     text-decoration: none;
+
+    &:hover {
+      color: #faeab1;
+    }
+  }
+  .navLogo.linkColorChange {
+    color: #c58940;
+    &:hover {
+      color: #e5ba73;
+    }
   }
   .navMenu {
     display: flex;
@@ -52,21 +61,26 @@ export const Container = styled.div`
     list-style: none;
   }
   .navLinks {
-    color: gray;
+    color: white;
     display: flex;
     align-items: center;
     padding: 0 1rem;
-     height: 100%; 
-   cursor: pointer; 
-   &.active { 
-  color: #000000; 
-  &.hover{
-    color: white;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #faeab1;
+    }
   }
-    
+  .navLinks.linkColorChange {
+    color: #c58940;
+
+    &:hover {
+      text-decoration: none;
+      color: #e5ba73;
+    }
   }
-  
-  
 `;
  
 
